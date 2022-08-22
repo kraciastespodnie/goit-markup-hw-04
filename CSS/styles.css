@@ -110,8 +110,8 @@ body {
     fill: var(--description-color);
 }
 
-.contact-icon :hover,
-.contact-icon :focus {
+.contact-icon use:hover,
+.contact-icon use:focus {
     color: #2196f3;
 }
 .contacts a {
