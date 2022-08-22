@@ -3,6 +3,7 @@
     --logo-color-first: #2196f3;
     --logo-color-second: #000000;
     --logo-color-third: #ffffff;
+    --logo-client-color: #AFB1B8;
     --description-color: #757575;
     --background-firs-color: #2f303a;
     --background-second-color: #f5f4fa;
@@ -11,7 +12,7 @@
     --button-text: #ffffff;
 }
 
-* {
+*, ::before, ::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -102,7 +103,13 @@ body {
     align-items: center;
     margin-left: auto;
 }
-
+/*
+.contact-icon {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+}
+*/
 .contacts a {
     text-decoration: none;
     color: var(--description-color);
@@ -177,6 +184,17 @@ body {
     gap: 30px;
 }
 
+.advantages-list div {
+    display: flex;
+    width: 270px;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    background: #f5f4fa;
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
+
 .advantages-list h4 {
     font-size: 14px;
     font-weight: 700;
@@ -237,14 +255,39 @@ body {
 
 .our-team-worker {
     background-color: var(--background-third-color);
-    width: 270px;
-    height: 368px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
 
 .our-team-worker-name {
+    color: var(--main-color)
+    font-size: 16px;
+    line-height: 19px;
+    line-height: 1.1875;
+    letter-spacing: 0.03em;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.our-team figcaption > ul {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+    gap: 10px;
+}
+
+.our-team-icon li {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.our-team-icon figcaption .our-team-worker-name {
     font-size: 16px;
     font-weight: 500;
     color: var(--main-color);
@@ -265,10 +308,46 @@ body {
     padding-bottom: 30px;
 }
 
-.footer-sidebar {
-    background-color: var(--background-firs-color);
+.our-clients {
+
+}
+
+.our-clients h2{
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--main-color);
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.our-clients ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.our-clients li{
+    width: 170px;
+    height: 92px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--logo-client-color);
+    border-radius: 4px;
+}
+
+.footer {
+background-color: var(--background-firs-color);
     padding-top: 60px;
     padding-bottom: 60px;
+}
+
+.footer-sidebar {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .footer-styles {
@@ -283,6 +362,9 @@ body {
 
 .logo-studio-footer {
     color: var(--logo-color-third);
+}
+.footer-address {
+    margin-right: 70px;
 }
 
 .footer-address address {
@@ -306,6 +388,16 @@ body {
 .footer-address a:hover,
 .footer-address a:focus {
     color: #2196f3;
+}
+
+.join-us-text {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: 
+}
+
 }
 
 /* portfolio styles*/
