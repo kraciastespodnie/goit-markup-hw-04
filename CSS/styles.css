@@ -95,7 +95,6 @@ body {
 .navi-type a:hover,
 .navi-type a:focus {
     color: #2196f3;
-    fill: #2196f3;
 }
 
 .contacts {
@@ -104,13 +103,17 @@ body {
     align-items: center;
     margin-left: auto;
 }
-/*
+
 .contact-icon {
-    width: 16px;
-    height: 12px;
     margin-right: 10px;
+    color: var(--description-color);
+    fill: var(--description-color);
 }
-*/
+
+.contact-icon :hover,
+.contact-icon :focus {
+    color: #2196f3;
+}
 .contacts a {
     text-decoration: none;
     color: var(--description-color);
