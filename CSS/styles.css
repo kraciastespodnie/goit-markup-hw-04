@@ -339,9 +339,16 @@ body {
 }
 
 .our-clients-list li:hover,
-.our-clients-list li:focus {
+.our-clients-list li:active {
     border: 1px solid #2196f3;
-    fill: #ffffff;
+    fill: #2196f3;
+    cursor: pointer;
+}
+
+.our-clients-list li:focus,
+.our-clients-list li:active {
+    border: 1px solid #2196f3;
+    fill: #2196f3;
     cursor: pointer;
 }
 
@@ -353,14 +360,13 @@ body {
 
 .footer-sidebar {
     display: flex;
-    flex-wrap: wrap;
 }
 
 .footer-styles {
-    padding-bottom: 20px;
+    margin-right: 70px;
 }
 
-.footer-styles a {
+.footer-styles a{
     text-decoration: none;
     width: 145px;
     height: 31px;
@@ -369,41 +375,68 @@ body {
 .logo-studio-footer {
     color: var(--logo-color-third);
 }
-.footer-address {
-    margin-right: 70px;
-}
 
-.footer-address address {
+.footer-address {
     font-size: 14px;
     font-style: normal;
     color: #ffffff;
     line-height: 1.71;
     letter-spacing: 0.03em;
     vertical-align: top;
+    margin-top: 20px;
 }
 
-.footer-address a {
+.footer-address-link{
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.6);
     font-size: 14px;
+    font-style: normal;
+    color: rgba(255, 255, 255, 0.6);
     line-height: 1.71;
     letter-spacing: 0.03em;
-    vertical-align: top;
+    vertical-align: top
+    margin-top: 20px;
 }
 
-.footer-address a:hover,
-.footer-address a:focus {
+.footer-address-link:hover,
+.footer-address-link:focus {
     color: #2196f3;
 }
 
-.join-us-text {
+.footer-join-us {
+    padding-top: 12px;
+}
+
+.footer-join-us-icon {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+.footer-join-us h5 {
     font-size: 14px;
     font-weight: 700;
     line-height: 1.14;
     letter-spacing: 0.03em;
-    color: 
+    color: #ffffff;
+    margin-bottom: 20px;
 }
 
+.footer-join-us-icon li {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: var(--social-media-icon);
+}
+
+.footer-join-us-icon li:hover,
+.footer-join-us-icon li:focus {
+    background-color: #2196f3;
+    fill: #ffffff;
+    cursor: pointer;
 }
 
 /* portfolio styles*/
