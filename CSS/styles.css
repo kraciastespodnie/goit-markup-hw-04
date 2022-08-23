@@ -10,6 +10,7 @@
     --background-third-color: #ffffff;
     --button: #2196f3;
     --button-text: #ffffff;
+    --social-media-icon: #AFB1B8;
 }
 
 *, ::before, ::after {
@@ -73,13 +74,13 @@ body {
 .logo-studio {
     color: var(--logo-color-second);
 }
-/*
-.navi {
+
+.navi-type {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
 }
-*/
+
 .navi-type a {
     text-decoration: none;
     color: var(--main-color);
@@ -99,31 +100,31 @@ body {
 
 .contacts {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    margin-right: 50px;
     margin-left: auto;
-}
-
-.contact-icon {
-    margin-right: 10px;
+    gap: 30px;
     color: var(--description-color);
     fill: var(--description-color);
 }
 
 .contacts a {
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
     color: var(--description-color);
     font-size: 14px;
     font-weight: 500;
     line-height: 1.38;
-    display: inline;
     letter-spacing: 0.02em;
-    margin-right: 50px;
 }
 
 .contacts a:hover,
 .contacts a:focus {
     color: #2196f3;
+    fill: #2196f3;
 }
 
 .banner {
@@ -281,21 +282,18 @@ body {
 .our-team-icon li {
     width: 44px;
     height: 44px;
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50%;
+    fill: var(--social-media-icon);
 }
 
-.our-team-icon figcaption .our-team-worker-name {
-    font-size: 16px;
-    font-weight: 500;
-    color: var(--main-color);
-    line-height: 1.1875;
-    letter-spacing: 0.03em;
-    text-align: center;
-    padding-top: 30px;
-    padding-bottom: 10px;
+.our-team-icon li:hover,
+.our-team-icon li:focus {
+    background-color: #2196f3;
+    fill: #ffffff;
+    cursor: pointer;
 }
 
 .our-team-worker-description {
@@ -305,7 +303,7 @@ body {
     letter-spacing: 0.03em;
     text-align: center;
     padding-top: 0px;
-    padding-bottom: 30px;
+    padding-bottom: 16px;
 }
 
 .our-clients {
@@ -322,25 +320,33 @@ body {
     padding-bottom: 50px;
 }
 
-.our-clients ul{
+.our-clients-list{
     list-style: none;
     display: flex;
     justify-content: center;
     gap: 30px;
 }
 
-.our-clients li{
+.our-clients-list li{
     width: 170px;
     height: 92px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid var(--logo-client-color);
     border-radius: 4px;
+    border: 1px solid var(--logo-client-color);
+    fill: var(--logo-client-color);
+}
+
+.our-clients-list li:hover,
+.our-clients-list li:focus {
+    border: 1px solid #2196f3;
+    fill: #ffffff;
+    cursor: pointer;
 }
 
 .footer {
-background-color: var(--background-firs-color);
+    background-color: var(--background-firs-color);
     padding-top: 60px;
     padding-bottom: 60px;
 }
