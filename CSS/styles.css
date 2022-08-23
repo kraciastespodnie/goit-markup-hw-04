@@ -262,7 +262,7 @@ body {
 }
 
 .our-team-worker-name {
-    color: var(--main-color)
+    color: var(--main-color);
     font-size: 16px;
     line-height: 19px;
     line-height: 1.1875;
@@ -393,7 +393,7 @@ body {
     color: rgba(255, 255, 255, 0.6);
     line-height: 1.71;
     letter-spacing: 0.03em;
-    vertical-align: top
+    vertical-align: top;
     margin-top: 20px;
 }
 
