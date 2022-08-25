@@ -3,17 +3,19 @@
     --logo-color-first: #2196f3;
     --logo-color-second: #000000;
     --logo-color-third: #ffffff;
-    --logo-client-color: #AFB1B8;
+    --logo-client-color: #afb1b8;
     --description-color: #757575;
     --background-firs-color: #2f303a;
     --background-second-color: #f5f4fa;
     --background-third-color: #ffffff;
     --button: #2196f3;
     --button-text: #ffffff;
-    --social-media-icon: #AFB1B8;
+    --social-media-icon: #afb1b8;
 }
 
-*, ::before, ::after {
+*,
+::before,
+::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -306,11 +308,7 @@ body {
     padding-bottom: 16px;
 }
 
-.our-clients {
-
-}
-
-.our-clients h2{
+.our-clients h2 {
     font-size: 36px;
     font-weight: 700;
     color: var(--main-color);
@@ -320,14 +318,14 @@ body {
     padding-bottom: 50px;
 }
 
-.our-clients-list{
+.our-clients-list {
     list-style: none;
     display: flex;
     justify-content: center;
     gap: 30px;
 }
 
-.our-clients-list li{
+.our-clients-list li {
     width: 170px;
     height: 92px;
     display: flex;
@@ -366,7 +364,7 @@ body {
     margin-right: 70px;
 }
 
-.footer-styles a{
+.footer-styles a {
     text-decoration: none;
     width: 145px;
     height: 31px;
@@ -386,7 +384,7 @@ body {
     margin-top: 20px;
 }
 
-.footer-address-link{
+.footer-address-link {
     text-decoration: none;
     font-size: 14px;
     font-style: normal;
@@ -429,7 +427,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    fill: var(--social-media-icon);
+    fill: var(--background-third-color);
 }
 
 .footer-join-us-icon li:hover,
@@ -482,9 +480,10 @@ body {
     gap: 30px;
 }
 
-.portfolio-project {
-    width: 370px;
-    height: 404px;
+.portfolio-project-list figure:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
 }
 
 .portfolio-project figcaption {
