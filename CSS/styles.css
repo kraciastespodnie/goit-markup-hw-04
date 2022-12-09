@@ -138,7 +138,7 @@ body {
     background-color: var(--background-firs-color);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100%;
+    max-width: 1600px;
     max-height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -237,7 +237,6 @@ body {
 
 .our-team {
     background-color: var(--background-second-color);
-    width: 100%;
 }
 
 .our-team h2 {
@@ -353,7 +352,6 @@ body {
 
 .footer {
     background-color: var(--background-firs-color);
-    width: 100%;
     padding-top: 60px;
     padding-bottom: 60px;
 }
